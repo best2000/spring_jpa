@@ -26,14 +26,12 @@ public class DemoApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		log.info("insert mock data to table...");
 		// Inserting the data in table.
-		TeacherEntity teacher1 = new TeacherEntity(0,"Thestha Subhatosha",22,"Computer Engineering");
-		TeacherEntity teacher2 = new TeacherEntity(1,"Thestui Supato",99,"Computer Engineering");
-		TeacherEntity teacher3 = new TeacherEntity(2,"Jonathan Joestar",50,"Hamon man");
-		TeacherEntity teacher4 = new TeacherEntity(3,"Hand Solo",41,"Handjob");
+		TeacherEntity teacher1 = new TeacherEntity(1,"Thestui Supato",99,"Computer Engineering");
+		TeacherEntity teacher2 = new TeacherEntity(2,"Jonathan Joestar",50,"Hamon man");
+		TeacherEntity teacher3 = new TeacherEntity(3,"Hand Solo",41,"Handjob");
 		teacherRepo.save(teacher1);
 		teacherRepo.save(teacher2);
 		teacherRepo.save(teacher3);
-		teacherRepo.save(teacher4);
 		log.info("insert mock data done.");
 	}
 }
