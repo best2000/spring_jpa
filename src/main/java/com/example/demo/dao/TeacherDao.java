@@ -1,6 +1,6 @@
 package com.example.demo.dao;
 
-public class TeacherDAO {
+public class TeacherDao {
     private Integer id;
     private String name;
 
@@ -8,17 +8,17 @@ public class TeacherDAO {
 
     private String major;
 
-    public TeacherDAO() {
+    public TeacherDao() {
     }
 
-    public TeacherDAO(Integer id, String name, Integer age, String major) {
+    public TeacherDao(Integer id, String name, Integer age, String major) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.major = major;
     }
 
-    public TeacherDAO(Integer id, String name) {
+    public TeacherDao(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
