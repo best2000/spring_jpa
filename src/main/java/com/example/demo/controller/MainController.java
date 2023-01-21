@@ -42,9 +42,9 @@ public class MainController {
     }
 
     @GetMapping("/getTeacher")
-    public Optional<TeacherEntity> getTeacher(@RequestBody TeacherDAO teacherDao) {
-        log.info("get teacher id={}",teacherDao.getId());
-        Optional<TeacherEntity> teacherEntity = teacherRepo.findById(teacherDao.getId());
+    public Optional<TeacherEntity> getTeacher(@RequestParam("id") Integer id) {
+        log.info("get teacher id={}",id);
+        Optional<TeacherEntity> teacherEntity = teacherRepo.findById(id);
         return teacherEntity;
     }
 
